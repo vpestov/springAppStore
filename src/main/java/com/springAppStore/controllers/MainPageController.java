@@ -1,10 +1,21 @@
 package com.springAppStore.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
-/**
- * Created by valeriy on 8/6/14.
- */
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 @Controller
 public class MainPageController {
+
+    @RequestMapping(method = RequestMethod.GET, value = "/mainPage")
+    protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        ModelAndView model = new ModelAndView("mainPage");
+        final String test = "Test Data !!!";
+        model.addObject("testData",test);
+        return model;
+    }
 }
