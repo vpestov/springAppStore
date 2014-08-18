@@ -27,4 +27,5 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd http://www.
         <property name="password" value="${jdbc.password}"/>
     </bean>
 
+    <!--<import resource="springAppStore-security.xml"/>-->
 </beans>

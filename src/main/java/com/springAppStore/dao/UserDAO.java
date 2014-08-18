@@ -1,7 +1,7 @@
-package dao;
+package com.springAppStore.dao;
 
 import com.springAppStore.models.User;
-import mappers.UserMapper;
+import com.springAppStore.mappers.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 

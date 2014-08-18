@@ -18,4 +18,6 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.spri
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <bean name="customAuthenticationProvider" class="com.springAppStore.services.CustomAuthenticationProviderService"/>
+
 </beans>

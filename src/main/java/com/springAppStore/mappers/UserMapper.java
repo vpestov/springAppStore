@@ -1,4 +1,4 @@
-package mappers;
+package com.springAppStore.mappers;
 
 import com.springAppStore.models.User;
 import org.springframework.jdbc.core.RowMapper;
